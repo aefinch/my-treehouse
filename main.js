@@ -16,7 +16,8 @@ function executeThisCodeAfterFileLoaded(){
 	var badges = data.badges;
 	for (var y=allRows.length-1; y>0;y--){
 		console.log(allRows[y]);
-		for (i=0; i<y; i++){
+		for (var i=0; i<y; i++){
+			
 			console.log(badges[i].icon_url)
 			allRows[y].innerHTML+=`<img class="badges" src="${badges[i].icon_url}">`;
 		};
